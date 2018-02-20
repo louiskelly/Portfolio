@@ -1,0 +1,289 @@
+body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+#container{
+	min-height: 100%;
+	margin-bottom: -150px;
+}
+
+#push{
+	height: 150px;
+}
+
+#navbar{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	height: 100px;
+	
+	margin: 0 auto;
+	margin-top: 10px;
+	max-width: 1200px;
+}
+
+.navbaritem{
+	text-align: center;
+}
+
+.navtext{
+	margin-top: 35px;
+}
+
+.navbaritem a{
+	text-decoration: none;
+	display: inline-block;
+
+	padding: 10px;
+	color: #333333;
+	font-size: 22px;
+	font-family: 'Josefin Slab', serif;
+	font-weight: 800;
+}
+
+.navtext a:hover{
+	text-decoration: underline;
+}
+
+.portfoliogrid{
+	width: 800px;
+	margin: 0 auto;
+	margin-top: 50px;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 150px 150px 150px 150px;
+	grid-row-gap: 10px;
+	grid-column-gap: 10px;
+}
+
+.filler{
+	background-color: #333333;
+	background-image: url('http://www.sciencemag.org/sites/default/files/styles/article_main_image_-_1280w__no_aspect_/public/cc_iStock-478639870_16x9.jpg?itok=y1oFCoHB');
+	background-position: center;
+	transition-duration:0.5s;
+	position: relative;
+	cursor: pointer;
+}
+
+.lowtext{
+	opacity: 0;
+	height: 40px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(51, 51, 51, 0.7);
+
+	transition-duration:0.5s;
+}
+
+.lowtext h3{
+	color: white;
+	margin: 4px;
+	margin-top: 2px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+
+}
+
+.lowtext p{
+	color: white;
+	margin: 4px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 600;
+	font-size: 10px;
+
+}
+
+#footer{
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 0;
+	background-color: #333333;
+	height: 150px;
+}
+
+.maincontent{
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 160px;
+	width: 800px;
+	height: 200px;
+	display: grid;
+	grid-template-columns: 200px 560px;
+	grid-column-gap: 40px;
+
+}
+
+.descriptiondiv{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+.descriptiondiv h3{
+	margin-top: 0;
+}
+
+.portraitdiv{
+	margin: 0 auto;
+	max-width: 200px;
+}
+.portraitdiv img{
+	width: 100%;
+	border-radius: 360px;
+}
+
+.lowermain{
+	margin: 0 auto;
+	width: 800px;
+	display: grid;
+	grid-template-columns:1fr 1fr 1fr;
+	grid-template-rows:250px;
+	grid-column-gap: 40px;
+	text-align: center;
+}
+
+.lowermain i{
+	font-size: 70px;
+	color: #333333;
+}
+
+.lowermain p{
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+.phonediv,.emaildiv{
+	font-size: 30px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 200;
+}
+
+.contacticon{
+	display: inline-block;
+}
+
+.phonediv p, .emaildiv p{
+	display: inline-block;
+}
+
+#contactform{
+	width: 800px;
+	text-align: center;
+	display: grid;
+	grid-template-columns: 400px 400px;
+	margin: 0 auto;
+	margin-top: 200px;
+	margin-bottom: 100px;
+}
+
+.contactaftertext{
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	text-align: center;
+}
+
+.topmenuicon{
+	display: none;
+	margin: 0;
+}
+
+.footertext{
+	display: inline-block;
+	color: white;
+	font-size: 12px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	padding: 8px;
+}
+
+#footer i{
+	padding: 8px;
+	color: white;
+	font-size: 30px;
+	float: right;
+	display: inline-block;
+}
+
+/*Media quueries*/
+@media only screen and (max-width: 840px) {
+    .portfoliogrid{
+	width: 100%;
+	margin-top: 0px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 150px 150px 150px 150px 150px 150px;
+}
+
+.topmenuicon{
+	display: block;
+	text-align: center;
+}
+.bigmenuicon{
+	display: none;
+}
+
+#navbar{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	height: 60px;
+	margin-top: 0
+}
+
+.navtext{
+	margin-top: 15px;
+}
+
+.navbaritem a{
+	padding: 10px;
+	color: #333333;
+	font-size: 18px;
+	font-weight: 800;
+}
+
+.maincontent{
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 160px;
+	width: 100%;
+	height: 200px;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-column-gap: 40px;
+
+}
+
+.descriptiondiv{
+	padding-top: 25px;
+	margin: 0 auto;
+	max-width: 85%;
+}
+
+.lowermain{
+	margin: 0 auto;
+	padding-top: 140px;
+	width: 100%;
+	max-width: 300px;
+	display: grid;
+	grid-template-columns:100%;
+	grid-template-rows:250px 250px 250px;
+	grid-column-gap: 40px;
+	text-align: center;
+}
+
+#contactform{
+	width: 100%;
+	text-align: center;
+	display: grid;
+	grid-template-columns: 100%;
+	margin: 0 auto;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	grid-row-gap: 80px;
+}
+}
