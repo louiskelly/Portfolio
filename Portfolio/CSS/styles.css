@@ -1,7 +1,12 @@
+html{
+	height: 100%;
+}
+
 body{
 	margin: 0;
 	padding: 0;
-	height: 100%;
+	position: relative;
+	min-height: 100%;
 }
 
 #container{
@@ -103,6 +108,8 @@ body{
 	margin-bottom: 0;
 	background-color: #333333;
 	height: 150px;
+	position: absolute;
+	bottom: 0;
 }
 
 .maincontent{
@@ -207,6 +214,22 @@ body{
 	font-size: 30px;
 	float: right;
 	display: inline-block;
+}
+
+#splashcontainer{
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	grid-template-columns:70% 30%;
+	grid-template-rows: 100%;
+}
+
+.splashimg{
+	background-color: lightgrey;
+}
+
+.splashcontent{
+	background-color: #333333;
 }
 
 /*Media quueries*/
