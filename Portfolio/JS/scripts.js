@@ -9,11 +9,11 @@ $('.filler').mouseleave(function(){
 //ANIMSITION
 
 $(document).ready(function() {
-  $("body").animsition({
-    inClass: 'fade-in-right-sm',
-    outClass: 'fade-out-right-sm',
-    inDuration: 1500,
-    outDuration: 800,
+  $("html").animsition({
+    inClass: 'fade-in',
+    outClass: 'fade-out',
+    inDuration: 1200,
+    outDuration: 1200,
     linkElement: '.animsition-link',
     // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
     loading: true,
@@ -23,7 +23,7 @@ $(document).ready(function() {
     timeout: false,
     timeoutCountdown: 5000,
     onLoadEvent: true,
-    // browser: [ 'animation-duration', '-webkit-animation-duration'],
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
     // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
     // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
     overlay : false,
