@@ -18,8 +18,23 @@ body{
 }
 
 .splashimg{
-	background-color: lightgrey;
+	background-color: #333333;
 }
+
+svg {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10vh;
+}
+
+path {
+  fill: none;
+  stroke: lightgrey;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 
 .splashlogo{
 	margin-top: 25vh;
