@@ -64,7 +64,7 @@ path {
 }
 
 #push{
-	height: 150px;
+	height: 70px;
 }
 
 #navbar{
@@ -157,15 +157,15 @@ path {
 	margin-top: 50px;
 	margin-bottom: 0;
 	background-color: #333333;
-	height: 150px;
+	height: 70px;
 	position: absolute;
 	bottom: 0;
 }
 
 .maincontent{
 	margin: 0 auto;
-	margin-top: 50px;
-	margin-bottom: 160px;
+	margin-top: 100px;
+	margin-bottom: 100px;
 	width: 800px;
 	height: 200px;
 	display: grid;
@@ -177,6 +177,13 @@ path {
 .descriptiondiv{
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
+}
+
+.abouth3{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 600;
+	text-align: center;
+	margin: 30px;
 }
 
 .descriptiondiv h3{
@@ -197,7 +204,7 @@ path {
 	width: 800px;
 	display: grid;
 	grid-template-columns:1fr 1fr 1fr;
-	grid-template-rows:250px;
+	grid-template-rows:150px;
 	grid-column-gap: 40px;
 	text-align: center;
 }
@@ -266,6 +273,10 @@ path {
 	display: inline-block;
 }
 
+.modallink{
+	display: inline;
+}
+
 /*Media quueries*/
 @media only screen and (max-width: 840px) {
     .portfoliogrid{
@@ -277,6 +288,7 @@ path {
 }
 
 .topmenuicon{
+	margin-top: 10px;
 	display: block;
 	text-align: center;
 }
@@ -294,7 +306,6 @@ path {
 .navtext{
 	margin-top: 15px;
 }
-
 .navbaritem a{
 	padding: 10px;
 	color: #333333;
@@ -305,8 +316,8 @@ path {
 .maincontent{
 	text-align: center;
 	margin: 0 auto;
-	margin-top: 50px;
-	margin-bottom: 160px;
+	margin-top: 100px;
+	margin-bottom: 340px;
 	width: 100%;
 	height: 200px;
 	display: grid;
@@ -323,14 +334,13 @@ path {
 
 .lowermain{
 	margin: 0 auto;
-	padding-top: 140px;
-	padding-bottom: 50px;
+	padding-bottom: 40px;
 	width: 100%;
 	max-width: 300px;
 	display: grid;
 	grid-template-columns:100%;
-	grid-template-rows:250px 250px 250px;
-	grid-column-gap: 40px;
+	grid-template-rows:150px 150px 150px;
+	grid-row-gap: 40px;
 	text-align: center;
 }
 

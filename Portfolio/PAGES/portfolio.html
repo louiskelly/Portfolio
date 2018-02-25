@@ -5,6 +5,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css">
 	<link rel="stylesheet" href="../CSS/styles.css">
 	<link rel="stylesheet" type="text/css" href="../CSS/animsition.min.css">
 	<meta charset="UTF-8">
@@ -13,23 +14,27 @@
 <body>
 	<div id="container">
 		<div id="header">
-			<span class="topmenuicon"><img src="../IMAGES/logo.png" alt=""></span>
+			<span class="topmenuicon"><a href="../index.html"><img src="../IMAGES/logo.png" alt=""></a></span>
 			<div id="navbar">
 				<div class="navbaritem navtext"><a href="portfolio.html">PORTFOLIO</a></div>
 				<div class="navbaritem navtext"><a href="about.html">ABOUT</a></div>
-				<span class="bigmenuicon"><div class="navbaritem"><img src="../IMAGES/logo.png" alt=""></div></span>
+				<span class="bigmenuicon"><div class="navbaritem"><a href="../index.html"><img src="../IMAGES/logo.png" alt=""></a></div></span>
 				<div class="navbaritem navtext"><a href="#">BLOG</a></div>
 				<div class="navbaritem navtext"><a href="contact.html">CONTACT</a></div>
 			</div>
 		</div>
 
 		<div class="portfoliogrid">
-			<div class="filler">
-				<div class="lowtext">
-					<h3>City to sea bridge</h3>
-					<p>School Work</p>
+
+			<a href="#citytoseabridge_modal" rel="modal:open">
+				<div class="filler">
+					<div class="lowtext">
+						<h3>City to sea bridge</h3>
+						<p>School Work</p>
+					</div>
 				</div>
-			</div>
+			</a>
+
 			<div class="filler">
 				<div class="lowtext">
 					<h3>One Fat Bird app</h3>
@@ -98,6 +103,13 @@
 			</div>
 		</div>
 		<div id="push"></div>
+
+<!-- MODALS -->
+<div id="citytoseabridge_modal" class="modal">
+  <p>Thanks for clicking. That felt good.</p>
+  <a href="#" rel="modal:close">Close</a>
+</div>
+
 	</div>
 		<div id="footer">
 			<p class="footertext">Website created by Louis Kelly.</p>
@@ -108,6 +120,7 @@
 	<!-- scripts -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="../JS/animsition.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 	<script src="../JS/scripts.js"></script>
 </body>
 </html>
