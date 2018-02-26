@@ -115,11 +115,24 @@ path {
 
 .filler{
 	background-color: #333333;
-	background-image: url('http://www.sciencemag.org/sites/default/files/styles/article_main_image_-_1280w__no_aspect_/public/cc_iStock-478639870_16x9.jpg?itok=y1oFCoHB');
+	background-image: url('../IMAGES/kiwiventure_bg.png');
 	background-position: center;
 	transition-duration:0.5s;
 	position: relative;
 	cursor: pointer;
+	box-shadow: 2px 2px 2px 1px #dddddd;
+}
+
+.portfolioitem2{
+	background-image: url('../IMAGES/onefatbird_bg.png');
+}
+
+.portfolioitem3{
+	background-image: url('../IMAGES/kiwiventure_bg.png');
+}
+
+.portfolioitem4{
+	background-image: url('../IMAGES/randomword_bg.png');
 }
 
 .lowtext{
@@ -275,6 +288,58 @@ path {
 
 .modallink{
 	display: inline;
+}
+
+.popupmodal{
+	width: 400px;
+	height: 450px;
+	padding: 0;
+	padding-top: 20px;
+}
+
+.modaltitle{
+	padding: 4px;
+	color: #333333;
+	margin: 4px;
+	margin-top: 2px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 24px;
+}
+
+.modalsubtitle{
+	padding: 4px;
+	color: #333333;
+	margin: 4px;
+	margin-top: 2px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.modaldescription{
+	color: #333333;
+	margin: 4px;
+	padding: 4px;
+	margin-top: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 1.4;
+}
+
+.visitbutton button{
+	float: right;
+	margin: 8px;
+	border: none;
+	background-color: #333333;
+	color: white;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
 }
 
 /*Media quueries*/
