@@ -109,8 +109,8 @@ path {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 150px 150px 150px 150px;
-	grid-row-gap: 10px;
-	grid-column-gap: 10px;
+	grid-row-gap: 20px;
+	grid-column-gap: 20px;
 }
 
 .filler{
@@ -120,7 +120,7 @@ path {
 	transition-duration:0.5s;
 	position: relative;
 	cursor: pointer;
-	box-shadow: 2px 2px 2px 1px #dddddd;
+	box-shadow: 2px 2px 3px 2px #bfbfbf;
 }
 
 .portfolioitem2{
